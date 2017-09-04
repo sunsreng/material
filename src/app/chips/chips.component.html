@@ -1,0 +1,7 @@
+<md-chip-list>
+  <md-chip
+    *ngFor="let category of categories"
+    (click)="selectCategory(category)"
+    [selected]="category.selected"
+  >{{ category.name }}</md-chip>
+</md-chip-list>

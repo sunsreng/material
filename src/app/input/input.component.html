@@ -1,0 +1,12 @@
+<md-input-container>
+ <input 
+  ngModel
+  #username="ngModel"
+  type="text" mdInput placeholder="User Name" required>
+ <md-hint>Type a unique username.</md-hint>
+ <span mdSuffix>@domain.com</span>
+ <span mdPrefix>Admin.</span>
+ <md-error *ngIf="username.invalid && username.errors.required">
+   The user name field is required...
+ </md-error>
+</md-input-container>
